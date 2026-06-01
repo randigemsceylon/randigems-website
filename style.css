@@ -1,0 +1,426 @@
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:#050505;
+  color:white;
+  overflow-x:hidden;
+}
+
+.container{
+  width:90%;
+  max-width:1300px;
+  margin:auto;
+}
+
+header{
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:999;
+  background:rgba(0,0,0,0.65);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 0;
+  flex-wrap:wrap;
+}
+
+.logo-area h1{
+  font-family:'Cinzel',serif;
+  color:#d4af37;
+  font-size:2rem;
+}
+
+.logo-area p{
+  color:#d7c9a2;
+  font-size:0.9rem;
+}
+.logo {
+    height: 80px;
+    width: auto;
+    display: block;
+}
+nav a{
+  color:#fff;
+  text-decoration:none;
+  margin-left:25px;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#d4af37;
+}
+
+.hero{
+  height:100vh;
+  background:url('https://images.unsplash.com/photo-1615655096345-61a54750068d?q=80&w=2000&auto=format&fit=crop') center/cover no-repeat;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  position:relative;
+}
+
+.overlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.7));
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+  max-width:900px;
+  padding:20px;
+}
+
+.premium-text{
+  color:#d4af37;
+  letter-spacing:5px;
+  font-size:0.9rem;
+}
+
+.hero h2{
+  font-family:'Cinzel',serif;
+  font-size:5rem;
+  margin:25px 0;
+  line-height:1.1;
+}
+
+.hero p{
+  color:#eee;
+  font-size:1.2rem;
+  max-width:750px;
+  margin:auto;
+}
+
+.hero-buttons{
+  margin-top:40px;
+}
+
+.btn{
+  display:inline-block;
+  padding:15px 35px;
+  background:#d4af37;
+  color:black;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:600;
+  margin:5px;
+  transition:0.3s;
+}
+
+.btn:hover{
+  transform:translateY(-3px);
+}
+
+.white{
+  background:white;
+}
+
+.luxury-info{
+  width:90%;
+  max-width:1150px;
+  margin:-60px auto 0;
+  position:relative;
+  z-index:5;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+.lux-box{
+  background:#101010;
+  border:1px solid rgba(212,175,55,0.2);
+  padding:35px;
+  text-align:center;
+  border-radius:25px;
+  box-shadow:0 0 25px rgba(212,175,55,0.08);
+}
+
+.lux-box h3{
+  color:#d4af37;
+  font-size:2rem;
+}
+
+.section{
+  padding:120px 0;
+}
+
+.dark{
+  background:#0d0d0d;
+}
+
+.glass{
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:35px;
+  padding:60px;
+  backdrop-filter:blur(10px);
+}
+
+.glass h2{
+  font-family:'Cinzel',serif;
+  margin-bottom:25px;
+  font-size:2.8rem;
+}
+
+.about-text{
+  color:#ddd;
+}
+
+.mission-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:25px;
+  margin-top:40px;
+}
+
+.mission-card{
+  background:#121212;
+  padding:35px;
+  border-radius:25px;
+}
+
+.mission-card h3{
+  color:#d4af37;
+  margin-bottom:15px;
+}
+
+.title-center{
+  text-align:center;
+  margin-bottom:60px;
+  font-size:3rem;
+  color:#d4af37;
+  font-family:'Cinzel',serif;
+}
+
+.gem-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:35px;
+}
+
+.gem-card{
+  background:#121212;
+  border-radius:28px;
+  overflow:hidden;
+  transition:0.4s;
+  border:1px solid rgba(255,255,255,0.06);
+}
+
+.gem-card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 0 35px rgba(212,175,55,0.18);
+}
+
+.gem-card img{
+  width:100%;
+  height:350px;
+  object-fit:cover;
+}
+
+.gem-content{
+  padding:30px;
+}
+
+.gem-content h3{
+  margin-bottom:12px;
+  color:#d4af37;
+}
+
+.gem-content span{
+  display:inline-block;
+  margin-top:15px;
+  font-weight:bold;
+}
+
+.banner{
+  height:70vh;
+  background:url('https://images.unsplash.com/photo-1523170335258-f5ed11844a49?q=80&w=2000&auto=format&fit=crop') center/cover no-repeat;
+  position:relative;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.banner-overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.7);
+}
+
+.banner-content{
+  position:relative;
+  z-index:2;
+}
+
+.banner-content h2{
+  font-size:4rem;
+  font-family:'Cinzel',serif;
+}
+
+.banner-content p{
+  margin-top:20px;
+  color:#eee;
+}
+
+.chairman-card{
+  background:#111;
+  border-radius:30px;
+  padding:60px;
+  border:1px solid rgba(255,255,255,0.08);
+}
+
+.chairman-text h2{
+  font-family:'Cinzel',serif;
+  font-size:3rem;
+}
+
+.chairman-text h4{
+  color:#d4af37;
+  margin:15px 0 25px;
+}
+
+.center{
+  text-align:center;
+}
+
+.map-link{
+  display:inline-block;
+  margin-top:25px;
+  color:#d4af37;
+}
+
+footer{
+  background:black;
+  padding:30px;
+  text-align:center;
+  color:#aaa;
+}
+
+@media(max-width:768px){
+
+  .hero h2{
+    font-size:2.8rem;
+  }
+
+  .banner-content h2{
+    font-size:2.5rem;
+  }
+
+  .nav{
+    flex-direction:column;
+    gap:15px;
+  }
+
+  nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+  nav a{
+    margin:5px 10px;
+  }
+
+  .glass{
+    padding:35px;
+}
+
+.hero-image img {
+    width: 280px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    margin-top: 20px;
+    opacity: 0.35;
+}
+
+.hero-content{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.hero{
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    max-width:900px;
+    padding:20px;
+}
+
+.premium-text{
+    color:#d4af37;
+    letter-spacing:5px;
+    font-size:14px;
+    font-weight:600;
+}
+
+.hero h2{
+    font-size:72px;
+    line-height:1.1;
+    color:white;
+    margin:20px 0;
+    font-family:"Cinzel", serif;
+}
+
+.hero p{
+    color:#d1d5db;
+    font-size:20px;
+    line-height:1.7;
+    max-width:800px;
+    margin:auto;
+}
+
+.hero-buttons{
+    margin-top:35px;
+}
+
+.hero-buttons a{
+    display:inline-block;
+    padding:15px 35px;
+    margin:10px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn-gold{
+    background:#d4af37;
+    color:black;
+}
+
+.btn-light{
+    background:white;
+    color:black;
+}
+
+.btn-gold:hover,
+.btn-light:hover{
+    transform:translateY(-3px);
+    opacity:0.9;
+}
+}
