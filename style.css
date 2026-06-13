@@ -429,4 +429,11 @@ footer{
     object-fit:cover;
     border-radius:10px;
 }
+  .gem-content h3 a{
+  color:#d4af37;
+  text-decoration:none;
+}
+.gem-content h3 a:hover{
+  color:white;
+}
 }
