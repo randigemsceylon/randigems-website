@@ -443,3 +443,10 @@ footer{
 .gem-content h3 a:hover{
     color:white !important;
 }
+.article-image{
+width:100%;
+max-height:500px;
+object-fit:cover;
+border-radius:15px;
+margin:25px 0;
+}
