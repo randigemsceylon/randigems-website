@@ -450,3 +450,11 @@ object-fit:cover;
 border-radius:15px;
 margin:25px 0;
 }
+.article-container a{
+    color:#d4af37;
+    text-decoration:none;
+}
+
+.article-container a:hover{
+    color:white;
+}
